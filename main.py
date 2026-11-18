@@ -93,7 +93,7 @@ def sr(w,d,a,be,pl):
   sv=B[:]+[CR[0],EP[0],WK[0],BK[0]]
   if abs(pc)==1 and t==EP[0] and cp==0:B[t-16 if w else t+16]=0
   if abs(pc)==6 and abs(t-f)==2:
-   a=(112 if not w else 0)+(7 if t>f else 0);b=a-2 if t>f else a+3;B[b]=B[a];B[a]=0
+   u=(112 if not w else 0)+(7 if t>f else 0);v=u-2 if t>f else u+3;B[v]=B[u];B[u]=0
   B[f]=0;B[t]=(p if w else-p)if p else pc
   if abs(pc)==6:(WK if w else BK)[0]=t
   if abs(pc)==6:CR[0]&=12 if w else 3
